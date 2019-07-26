@@ -1,0 +1,131 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+.nav {
+	display: flex;
+	background: #000000;
+}
+.nav a {
+	color:#fff;
+	padding:15px 10px;
+	text-decoration:none;
+	text-align:center;
+}
+.nav a:hover { background:#373737; }
+.nav p {
+    color:#fff;
+	padding:15px 10px;
+	text-align:center;
+}
+.nav button {
+	background-color: #1f5dea;
+	padding: 15px 32px;
+	font-size: 16px;
+	color: white;  
+}
+.selected {
+	background-color: gray;
+}
+.bp {
+	display: flex;
+	background: #FFFFFF;
+}
+.bp a {
+	color:#fff;
+	padding:15px 10px;
+	text-decoration:none;
+	text-align:center;
+}
+.bp p {
+	color:#fff;
+	padding:15px 10px;
+	text-align:center;
+}
+.bp button {
+	background-color: #438EDD;
+	padding: 10px 20px;
+	margin: 5px 10px;
+}
+.left button {
+	background-color:red;
+}
+.button {
+  border: none;  
+  text-align: center;  
+  border-radius: 25px;
+}
+.right {
+    margin-right: auto;
+}
+.left {
+    margin-left: auto;
+}
+.left form {
+	text-align: center;
+}
+.table {
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.table table {
+	width: 100%;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	margin-top: 10px;
+}
+.table table thead td{
+	border-style: solid;
+	border-color: black;
+	border-width: 3px;
+	font-size: 18px;
+	font-weight: bold;
+	padding: 5px;
+}
+.table table tbody td{
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	padding: 5px;
+}
+.add {
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	background-color: #FFFFFF;
+	padding: 10px 20px;
+	margin: 5px 10px;
+	width: 97%;
+	align-content: center;
+}
+.success {
+	border-style: solid;
+	border-color: green;
+	border-width: 2px;
+	background-color: #0CA800;
+	text-align: center;
+	margin: 12px auto;
+	padding: 10px; 
+	font-size: 25px;
+	border-radius: 25px;
+}
+.success h1 {
+	color: white;
+}
+@media all and (max-width: 1920px) {
+	.nav { justify-content: space-around; }
+	.nav a{ flex-grow: 1; }
+	.bp { justify-content: space-around; }
+	.bp a { flex-grow: 1; }
+	.right { margin-right: inherit; }
+    .left { margin-left: inherit; }
+}
+@media all and (max-width: 1100px) {
+	.table {max-width: 95%;}
+}
+@media all and (max-width: 720px) {
+	.nav { flex-direction: column; }
+    .button { display: inline; align-items: center; justify-content: center }
+}
+
